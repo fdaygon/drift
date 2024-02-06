@@ -1,0 +1,64 @@
+package dashboard
+
+css header() {
+	background-color: #1E90FF;
+    color: #fff;
+    text-align: center;
+}
+
+css card() {
+    width: calc(25% - 20px); /* Calculate 25% width and subtract margins */
+    max-width: 200px; /* Limit maximum width */
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+css cardContainer() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+
+
+templ Dashboard() {
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drift</title>
+  </head>
+<body>
+<header class={header()}>
+    <h1>Ride that wave and catch the drift</h1>
+  </header>
+  <div class={cardContainer()}>
+      <div class={card()}>
+        <h2>Total Deployments</h2>
+        <p>5</p>
+      </div>
+       <div class={card()}>
+        <h2>Total Resources</h2>
+        <p>5</p>
+      </div>
+     <div class={card()}>
+        <h2>Total Drifting</h2>
+        <p>5</p>
+      </div>
+     <div class={card()}>
+        <h2>Total Coasting</h2>
+        <p>5</p>
+      </div>
+  </div>
+
+</body>
+</html>
+
+    }
+
+
