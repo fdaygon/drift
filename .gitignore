@@ -1,0 +1,6 @@
+*.sql
+*.log
+.DS_Store
+.DS_Store?
+
+*templ.go
